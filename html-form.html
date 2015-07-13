@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>
+            Ubermelon Order Form
+        </title>    
+    </header>
+    <body>
+        <h1>Order!</h1>
+        <table>
+            <h3>Prices</h3>
+            <thead>
+                <tr>
+                    <th>Melon Name &nbsp;</th> <th>Price per lb</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Watermelon</td> <td>$1.59</td>
+            </tr>
+            <tr>
+                <td>Honeydew</td> <td>$0.99</td>
+            </tr>
+            <tr>
+                <td>Canteloupe</td> <td>$1.29</td>
+            </tr>
+            <tr>
+                <td>Crenshaw</td> <td>$2.19</td>   
+            </tr>
+            <tr>
+                <td>Canary</td> <td>$11.99</td>
+            </tr>
+        </table>
+    
+    <p>Place your orders here! You know you want to.</p>
+    
+    <form action="https://ubermelon-order-form.herokuapp.com/process">
+        <label for="First Name">
+            First Name: <input type="text" name="firstname" id="field-firstname">
+        </label>
+        <p>
+            <label for="Last Name">
+                Last Name: <input type="text" name="lastname" id="field-lastname">
+            </label>
+        </p>
+        <p>
+            <label>Melon Type:
+                <select name="melontype">
+                    <option value="Watermelon">Watermelon</option>
+                    <option value="Honeydew">Honeydew</option>
+                    <option value="Canteloupe">Canteloupe</option>
+                    <option value="Crenshaw">Crenshaw</option>
+                    <option value="Canary">Canary</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <label>
+                Quantity*: <input type="text" name="quantity" id="field-quantity">
+            </label>
+        </p>
+        <p>
+            <label>
+                Delivery Time: 
+                <input type="radio" name="time" value="am" id="">12:00am-12:00pm
+                <input type="radio" name="time" value="pm" id="">12:00pm-12:00am
+                <input type="radio" name="time" value="wat" id="">Time is an illusion
+            </label>
+        </p>
+        <p>
+            <label>
+                Returning Customer?: 
+                <input type="radio" name="returning" value="yes" id="">Yes
+                <input type="radio" name="returning" value="no" id="">No
+            </label>
+        </p>
+        <p>
+            <label>
+                For Statistical Purposes: 
+                <input type="checkbox" name="stats" value="Dog" id="">Dog
+                <input type="checkbox" name="stats" value="Cat" id="">Cat
+                <input type="checkbox" name="stats" value="Hedgehog" id="">Hedgehog
+                <input type="checkbox" name="stats" value="Balloonicorn" id="">Balloonicorn
+                <input type="checkbox" name="stats" value="Yak" id="">Yak
+            </label>
+        </p>
+        <input type="submit">
+    </form>
+    <p>*Quantities given are by the flat</p> 
+    </body>    
+</html>
